@@ -49,15 +49,6 @@ export default function Home() {
                 <div className="h-px w-12 bg-white/50" />
               </motion.div>
 
-              <motion.p
-                className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.8 }}
-              >
-                Crafting compelling stories that captivate audiences and bring visions to life on screen
-              </motion.p>
-
               <motion.div
                 className="flex flex-col sm:flex-row items-center justify-center gap-6"
                 initial={{ opacity: 0, y: 20 }}
@@ -117,64 +108,6 @@ export default function Home() {
             <div className="w-1 h-3 bg-white/50 rounded-full" />
           </div>
         </motion.div>
-      </section>
-
-      {/* Services Section */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <AnimatedSection className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4">
-              What I Do
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Specialized screenwriting services tailored to bring your vision to life
-            </p>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <AnimatedSection delay={0.1}>
-              <div className="card text-center group hover:border-primary border-2 border-transparent transition-all duration-300">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <FaFilm className="text-3xl text-primary group-hover:text-white transition-colors duration-300" />
-                </div>
-                <h3 className="text-2xl font-display font-bold mb-4 text-gray-900">
-                  Feature Films
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Original screenplays and adaptations crafted for the big screen with compelling narratives and memorable characters
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.2}>
-              <div className="card text-center group hover:border-primary border-2 border-transparent transition-all duration-300">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <FaTv className="text-3xl text-primary group-hover:text-white transition-colors duration-300" />
-                </div>
-                <h3 className="text-2xl font-display font-bold mb-4 text-gray-900">
-                  Television
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Series development, pilot scripts, and episodic writing for streaming platforms and traditional networks
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.3}>
-              <div className="card text-center group hover:border-primary border-2 border-transparent transition-all duration-300">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <FaPen className="text-3xl text-primary group-hover:text-white transition-colors duration-300" />
-                </div>
-                <h3 className="text-2xl font-display font-bold mb-4 text-gray-900">
-                  Script Consulting
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Professional script analysis, coverage, and development notes to elevate your screenplay to the next level
-                </p>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
       </section>
     </>
   )

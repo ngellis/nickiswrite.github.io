@@ -50,42 +50,10 @@ export default function About() {
 
             {/* Text Content */}
             <AnimatedSection direction="right" className="space-y-6">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
-                  Bringing Stories to Life
-                </h2>
-                <div className="h-1 w-20 bg-primary rounded-full mb-6" />
-              </div>
-
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  With a deep passion for storytelling and years of experience in the industry, I specialize in crafting screenplays that resonate with audiences and bring creative visions to life.
+                  Nick Ellis is a Texas-raised screenwriter currently based in LA. In the past decade, he's developed or optioned writing projects with entities including Vertigo Entertainment, The Exchange, Exile Studios, Entertainment 360, Verve Ventures, A+E Studios, Untitled Entertainment, Fortitude International, Funnyboy Films, Chemically Altered Productions, and Billy Porter's Incognegro Productions, attaching directors including Tony-Nominee Scott Ellis (no relation), Stephen Herek, and Ernest Dickerson. He has three features currently being packaged and taken out to market: LA LECHUZA (horror), A HIGH FIVE FOR GLENN BURKE (sports/coming-of-age), and PUMA V ADIDAS (biopic). Prior to writing, he worked as the Creative Executive to Oscar-nominated screenwriters Andrea Berloff (STRAIGHT OUTTA COMPTON) and John Gatins (FLIGHT) during their overall deal at Netflix. Nick is represented by Sean Marks at Marks Law Group.
                 </p>
-
-                <p>
-                  My approach combines technical expertise with emotional depth, ensuring every script I write is not only professionally formatted but also compelling, authentic, and ready for production.
-                </p>
-
-                <p>
-                  Whether developing original concepts, adapting existing material, or providing script consulting services, I'm dedicated to helping filmmakers and content creators tell their stories in the most powerful way possible.
-                </p>
-              </div>
-
-              {/* Quote */}
-              <div className="relative bg-primary-50 border-l-4 border-primary p-6 rounded-r-lg my-8">
-                <FaQuoteLeft className="absolute top-4 left-4 text-primary opacity-20 text-3xl" />
-                <p className="italic text-gray-800 pl-8 leading-relaxed">
-                  "Every great film starts with a great script. My mission is to create stories that not only entertain but also inspire and move audiences."
-                </p>
-              </div>
-
-              <div className="pt-4">
-                <Link
-                  href="/contact"
-                  className="btn-primary inline-block"
-                >
-                  Let's Work Together
-                </Link>
               </div>
             </AnimatedSection>
           </div>

@@ -37,9 +37,6 @@ export default function Footer() {
               <FaFilm className="text-primary text-2xl" />
               <h3 className="text-xl font-display font-bold">Nicholas Ellis</h3>
             </motion.div>
-            <p className="text-gray-400 text-sm">
-              Screenwriter crafting compelling stories for film and television.
-            </p>
           </div>
 
           {/* Quick Links */}
