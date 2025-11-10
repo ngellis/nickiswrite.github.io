@@ -86,7 +86,7 @@ export default function Home() {
                 transition={{ delay: 1, duration: 0.8 }}
               >
                 <a
-                  href="https://instagram.com/your_instagram_handle"
+                  href="https://instagram.com/nickiswrite"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition-all duration-300 transform hover:scale-110"

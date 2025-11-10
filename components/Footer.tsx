@@ -8,7 +8,7 @@ const socialLinks = [
   {
     name: 'Instagram',
     icon: FaInstagram,
-    href: 'https://instagram.com/your_instagram_handle', // Update with actual handle
+    href: 'https://instagram.com/nickiswrite',
     color: 'hover:text-pink-500',
   },
   {
