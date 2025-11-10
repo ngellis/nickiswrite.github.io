@@ -44,7 +44,7 @@ export default function Home() {
               >
                 <div className="h-px w-12 bg-white/50" />
                 <p className="text-2xl md:text-3xl text-white/90 font-light tracking-wide">
-                  Professional Screenwriter
+                  Screenwriter
                 </p>
                 <div className="h-px w-12 bg-white/50" />
               </motion.div>

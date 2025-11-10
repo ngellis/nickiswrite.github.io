@@ -158,7 +158,7 @@ export default function Navigation() {
                   className="pb-8 pt-4 border-t border-white/20"
                 >
                   <p className="text-white/80 text-sm">
-                    Professional Screenwriter
+                    Screenwriter
                   </p>
                 </motion.div>
               </div>

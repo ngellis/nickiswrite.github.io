@@ -17,13 +17,13 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Nicholas Ellis | Professional Screenwriter',
-  description: 'Professional screenwriter portfolio showcasing creative storytelling and screenwriting services.',
+  title: 'Nicholas Ellis | Screenwriter',
+  description: 'Screenwriter portfolio showcasing creative storytelling and screenwriting services.',
   keywords: ['screenwriter', 'screenplay', 'film', 'television', 'writer', 'storytelling'],
   authors: [{ name: 'Nicholas Ellis' }],
   openGraph: {
-    title: 'Nicholas Ellis | Professional Screenwriter',
-    description: 'Professional screenwriter portfolio showcasing creative storytelling and screenwriting services.',
+    title: 'Nicholas Ellis | Screenwriter',
+    description: 'Screenwriter portfolio showcasing creative storytelling and screenwriting services.',
     type: 'website',
   },
 }

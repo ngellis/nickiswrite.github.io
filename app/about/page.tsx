@@ -45,28 +45,13 @@ export default function About() {
 
                 {/* Main image container */}
                 <div className="relative bg-gray-200 rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl">
-                  {/* Placeholder - Replace with actual photo */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-300 to-gray-400">
-                    <div className="text-center text-gray-600">
-                      <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-white/50 flex items-center justify-center">
-                        <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <p className="text-lg font-medium">Your Photo Here</p>
-                      <p className="text-sm mt-2">Add your professional headshot to:</p>
-                      <p className="text-xs font-mono mt-1">public/images/headshot.jpg</p>
-                    </div>
-                  </div>
-                  {/* Uncomment when you add your photo:
                   <Image
-                    src="/images/headshot.jpg"
-                    alt="Nicholas Ellis - Professional Screenwriter"
+                    src="/images/IMG_1452.WEBP"
+                    alt="Nicholas Ellis - Screenwriter"
                     fill
                     className="object-cover"
                     priority
                   />
-                  */}
                 </div>
               </div>
             </AnimatedSection>

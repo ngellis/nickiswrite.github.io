@@ -38,7 +38,7 @@ export default function Footer() {
               <h3 className="text-xl font-display font-bold">Nicholas Ellis</h3>
             </motion.div>
             <p className="text-gray-400 text-sm">
-              Professional screenwriter crafting compelling stories for film and television.
+              Screenwriter crafting compelling stories for film and television.
             </p>
           </div>
 
