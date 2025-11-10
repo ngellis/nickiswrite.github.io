@@ -251,30 +251,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map or Additional Info Section */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <AnimatedSection className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-6">
-              Working Worldwide
-            </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Based in the United States, I collaborate with clients globally. Remote consultations and project development available via video call.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="bg-white px-6 py-3 rounded-full shadow-md">
-                <span className="text-gray-700 font-medium">Remote Friendly</span>
-              </div>
-              <div className="bg-white px-6 py-3 rounded-full shadow-md">
-                <span className="text-gray-700 font-medium">Flexible Hours</span>
-              </div>
-              <div className="bg-white px-6 py-3 rounded-full shadow-md">
-                <span className="text-gray-700 font-medium">Quick Response</span>
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
     </>
   )
 }
