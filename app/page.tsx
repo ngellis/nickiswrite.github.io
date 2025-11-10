@@ -176,26 +176,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-primary-600 to-primary-400">
-        <div className="container-custom">
-          <AnimatedSection className="text-center max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-              Ready to Tell Your Story?
-            </h2>
-            <p className="text-xl text-white/90 mb-10 leading-relaxed">
-              Let's collaborate to create something extraordinary. Whether you have a complete vision or just an idea, I'm here to help bring it to life.
-            </p>
-            <Link
-              href="/contact"
-              className="btn-primary bg-white text-primary hover:bg-gray-100 shadow-2xl inline-block px-12 py-4 text-lg"
-            >
-              Start a Project
-            </Link>
-          </AnimatedSection>
-        </div>
-      </section>
     </>
   )
 }
