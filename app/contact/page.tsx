@@ -91,7 +91,7 @@ export default function Contact() {
             <AnimatedSection direction="left" className="space-y-8">
               <div>
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
-                  Let's Collaborate
+                  Get in touch
                 </h2>
                 <div className="h-1 w-20 bg-primary rounded-full mb-6" />
                 <p className="text-lg text-gray-700 leading-relaxed">
