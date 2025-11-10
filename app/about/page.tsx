@@ -19,16 +19,8 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              About Me
+              About
             </motion.h1>
-            <motion.p
-              className="text-xl md:text-2xl text-gray-600 leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.8 }}
-            >
-              A passion for storytelling, a dedication to craft
-            </motion.p>
           </AnimatedSection>
         </div>
       </section>
