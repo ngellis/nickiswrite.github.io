@@ -86,9 +86,6 @@ export default function Footer() {
                 </motion.a>
               ))}
             </div>
-            <p className="text-gray-400 text-sm mt-4">
-              Available for screenwriting projects and collaborations.
-            </p>
           </div>
         </div>
 
