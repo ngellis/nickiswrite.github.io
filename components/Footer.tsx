@@ -6,12 +6,6 @@ import { motion } from 'framer-motion'
 
 const socialLinks = [
   {
-    name: 'Instagram',
-    icon: FaInstagram,
-    href: 'https://instagram.com/nickiswrite',
-    color: 'hover:text-pink-500',
-  },
-  {
     name: 'Email',
     icon: FaEnvelope,
     href: '/contact',
