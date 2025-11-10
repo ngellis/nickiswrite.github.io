@@ -126,26 +126,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Availability Info */}
-              <div className="bg-primary-50 border-l-4 border-primary p-6 rounded-r-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">Availability</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Currently accepting new projects. Average response time is within 24-48 hours.
-                </p>
-              </div>
-
-              {/* Social Proof / Quote */}
-              <div className="pt-8">
-                <div className="relative">
-                  <div className="absolute -inset-2 bg-gradient-to-r from-primary-400 to-primary-600 rounded-xl opacity-10" />
-                  <div className="relative bg-white p-6 rounded-lg border border-gray-200">
-                    <p className="text-gray-700 italic mb-4">
-                      "I'm passionate about helping filmmakers tell their stories. Every project is an opportunity to create something meaningful."
-                    </p>
-                    <p className="font-semibold text-gray-900">— Nicholas Ellis</p>
-                  </div>
-                </div>
-              </div>
             </AnimatedSection>
 
             {/* Contact Form */}
