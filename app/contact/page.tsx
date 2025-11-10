@@ -71,14 +71,6 @@ export default function Contact() {
             >
               Get In Touch
             </motion.h1>
-            <motion.p
-              className="text-xl md:text-2xl text-gray-600 leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.8 }}
-            >
-              Let's discuss your next project and bring your vision to life
-            </motion.p>
           </AnimatedSection>
         </div>
       </section>
@@ -94,9 +86,6 @@ export default function Contact() {
                   Get in touch
                 </h2>
                 <div className="h-1 w-20 bg-primary rounded-full mb-6" />
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Whether you're looking for an original screenplay, script consulting, or a collaborative writing partnership, I'm here to help. Fill out the form and I'll get back to you as soon as possible.
-                </p>
               </div>
 
               {/* Contact Methods */}
