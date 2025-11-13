@@ -151,19 +151,6 @@ export default function Navigation() {
                     </motion.div>
                   ))}
                 </nav>
-
-                {/* Footer info in mobile menu */}
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.4 }}
-                  className="pb-8 pt-4 border-t"
-                  style={{ borderColor: '#3D4A3D20' }}
-                >
-                  <p className="text-sm" style={{ color: '#3D4A3D' }}>
-                    Screenwriter
-                  </p>
-                </motion.div>
               </div>
             </motion.div>
           </>
