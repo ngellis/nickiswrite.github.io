@@ -79,9 +79,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary-400 rounded-full;
+  background-color: #3D4A3D;
+  border: 2px solid white;
+  @apply rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary-500;
+  background-color: #2d3a2d;
+  border: 2px solid white;
 }

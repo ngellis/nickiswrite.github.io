@@ -54,7 +54,7 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="pt-32 pb-8" style={{ backgroundColor: '#3D4A3D' }}>
         <div className="container-custom">
-          <AnimatedSection className="text-center max-w-4xl mx-auto">
+          <AnimatedSection className="text-center mx-auto">
             <motion.h1
               className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 uppercase tracking-wider mt-12"
               style={{
@@ -71,7 +71,7 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Get In Touch
+              Say Howdy
             </motion.h1>
           </AnimatedSection>
         </div>
@@ -79,7 +79,7 @@ export default function Contact() {
 
       {/* Contact Section */}
       <section className="py-8 md:py-12 lg:py-16" style={{ backgroundColor: '#3D4A3D' }}>
-        <div className="container-custom max-w-2xl">
+        <div className="container-custom" style={{ maxWidth: '672px' }}>
           <AnimatedSection>
             <div className="bg-gray-50 rounded-2xl p-8 shadow-lg">
                 {isSubmitted ? (

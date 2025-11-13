@@ -51,8 +51,8 @@ export default function Navigation() {
       >
         <div className="container-custom">
           <div className="flex items-center justify-between h-20">
-            {/* Logo */}
-            <Link href="/" className="group">
+            {/* Logo - Hidden on mobile, visible on desktop */}
+            <Link href="/" className="group hidden md:block">
               <motion.h1
                 className={`text-2xl md:text-3xl font-display font-bold transition-colors duration-300 ${
                   scrolled ? 'text-white' : 'text-white'
@@ -63,6 +63,9 @@ export default function Navigation() {
                 Nicholas Ellis
               </motion.h1>
             </Link>
+
+            {/* Empty div for mobile to maintain layout */}
+            <div className="md:hidden" />
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
@@ -123,7 +126,7 @@ export default function Navigation() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-3/4 max-w-sm bg-gradient-to-br from-primary-600 to-primary-800 z-40 md:hidden shadow-2xl"
+              className="fixed top-0 right-0 bottom-0 w-3/4 max-w-sm bg-white z-40 md:hidden shadow-2xl"
             >
               <div className="flex flex-col h-full pt-24 px-8">
                 <nav className="flex-1 space-y-2">
@@ -138,9 +141,10 @@ export default function Navigation() {
                         href={link.path}
                         className={`block text-2xl font-display font-semibold py-4 px-4 rounded-lg transition-all duration-300 ${
                           pathname === link.path
-                            ? 'bg-white/20 text-white'
-                            : 'text-white/90 hover:bg-white/10 hover:text-white'
+                            ? 'bg-[#3D4A3D] text-white'
+                            : 'text-[#3D4A3D] hover:bg-[#3D4A3D]/10'
                         }`}
+                        style={{ color: pathname === link.path ? 'white' : '#3D4A3D' }}
                       >
                         {link.name}
                       </Link>
@@ -153,9 +157,10 @@ export default function Navigation() {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.4 }}
-                  className="pb-8 pt-4 border-t border-white/20"
+                  className="pb-8 pt-4 border-t"
+                  style={{ borderColor: '#3D4A3D20' }}
                 >
-                  <p className="text-white/80 text-sm">
+                  <p className="text-sm" style={{ color: '#3D4A3D' }}>
                     Screenwriter
                   </p>
                 </motion.div>
