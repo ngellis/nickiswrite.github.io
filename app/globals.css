@@ -34,7 +34,12 @@
   }
 
   .btn-primary {
-    @apply bg-primary hover:bg-primary-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+    @apply text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+    background-color: #3D4A3D;
+  }
+
+  .btn-primary:hover {
+    background-color: #2d3a2d;
   }
 
   .btn-secondary {

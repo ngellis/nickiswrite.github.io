@@ -55,8 +55,9 @@ export default function Navigation() {
             <Link href="/" className="group">
               <motion.h1
                 className={`text-2xl md:text-3xl font-display font-bold transition-colors duration-300 ${
-                  scrolled ? 'text-primary' : 'text-white'
+                  scrolled ? 'text-white' : 'text-white'
                 }`}
+                style={scrolled ? { color: '#3D4A3D' } : {}}
                 whileHover={{ scale: 1.05 }}
               >
                 Nicholas Ellis
@@ -69,20 +70,17 @@ export default function Navigation() {
                 <Link
                   key={link.path}
                   href={link.path}
-                  className={`text-lg font-medium transition-colors duration-300 hover:text-primary relative group ${
+                  className={`text-lg font-medium transition-all duration-300 relative group px-4 py-2 rounded-lg ${
                     pathname === link.path
-                      ? 'text-primary'
+                      ? scrolled
+                        ? 'text-white bg-[#3D4A3D]'
+                        : 'text-white bg-white/10'
                       : scrolled
-                      ? 'text-gray-800'
-                      : 'text-white'
+                      ? 'text-gray-800 hover:text-white hover:bg-[#3D4A3D]'
+                      : 'text-white hover:bg-white/10'
                   }`}
                 >
                   {link.name}
-                  <span
-                    className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${
-                      pathname === link.path ? 'w-full' : ''
-                    }`}
-                  />
                 </Link>
               ))}
             </div>

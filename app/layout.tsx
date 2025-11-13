@@ -1,13 +1,19 @@
 import type { Metadata } from 'next'
-import { Open_Sans } from 'next/font/google'
+import { Open_Sans, Bebas_Neue } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
   variable: '--font-opensans',
+  display: 'swap',
+})
+
+const bebasNeue = Bebas_Neue({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-bebas',
   display: 'swap',
 })
 
@@ -29,13 +35,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={openSans.variable}>
+    <html lang="en" className={`${openSans.variable} ${bebasNeue.variable}`}>
       <body className="font-sans">
         <Navigation />
         <main className="min-h-screen">
           {children}
         </main>
-        <Footer />
       </body>
     </html>
   )

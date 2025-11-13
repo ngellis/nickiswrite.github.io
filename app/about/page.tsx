@@ -10,11 +10,21 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-50 to-white">
+      <section className="pt-32 pb-16" style={{ backgroundColor: '#3D4A3D' }}>
         <div className="container-custom">
           <AnimatedSection className="text-center max-w-4xl mx-auto">
             <motion.h1
-              className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-gray-900 mb-6"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-wider"
+              style={{
+                fontFamily: 'var(--font-bebas)',
+                color: '#3D4A3D',
+                textShadow: `
+                  -1px -1px 0 white,
+                  1px -1px 0 white,
+                  -1px 1px 0 white,
+                  1px 1px 0 white
+                `
+              }}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -33,7 +43,7 @@ export default function About() {
             <AnimatedSection direction="left">
               <div className="relative">
                 {/* Decorative background */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-primary-400 to-primary-600 rounded-2xl transform rotate-3 opacity-20" />
+                <div className="absolute -inset-4 rounded-2xl transform rotate-3 opacity-20" style={{ background: 'linear-gradient(to bottom right, #D4E5D4, #B8C9B8)' }} />
 
                 {/* Main image container */}
                 <div className="relative bg-gray-200 rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl">

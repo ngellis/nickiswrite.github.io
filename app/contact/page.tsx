@@ -26,45 +26,47 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission - Replace with actual email service
-    // You can integrate with services like Formspree, EmailJS, or SendGrid
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormData({ name: '', email: '', subject: '', message: '' })
-
-      // Reset success message after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000)
-    }, 1500)
-
-    // Example Formspree integration (uncomment and add your form ID):
-    /*
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/xblqlozl', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       })
+
       if (response.ok) {
         setIsSubmitted(true)
         setFormData({ name: '', email: '', subject: '', message: '' })
+        // Reset success message after 5 seconds
+        setTimeout(() => setIsSubmitted(false), 5000)
+      } else {
+        alert('There was an error sending your message. Please try again or email directly at NicholasEllis4@gmail.com')
       }
     } catch (error) {
       console.error('Error submitting form:', error)
+      alert('There was an error sending your message. Please try again or email directly at NicholasEllis4@gmail.com')
     } finally {
       setIsSubmitting(false)
     }
-    */
   }
 
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-50 to-white">
+      <section className="pt-32 pb-8" style={{ backgroundColor: '#3D4A3D' }}>
         <div className="container-custom">
           <AnimatedSection className="text-center max-w-4xl mx-auto">
             <motion.h1
-              className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-gray-900 mb-6"
+              className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 uppercase tracking-wider mt-12"
+              style={{
+                fontFamily: 'var(--font-bebas)',
+                color: '#3D4A3D',
+                textShadow: `
+                  -1px -1px 0 white,
+                  1px -1px 0 white,
+                  -1px 1px 0 white,
+                  1px 1px 0 white
+                `
+              }}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -76,41 +78,10 @@ export default function Contact() {
       </section>
 
       {/* Contact Section */}
-      <section className="section-padding bg-white">
-        <div className="container-custom max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-            {/* Contact Information */}
-            <AnimatedSection direction="left" className="space-y-8">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
-                  Get in touch
-                </h2>
-                <div className="h-1 w-20 bg-primary rounded-full mb-6" />
-              </div>
-
-              {/* Contact Methods */}
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FaEnvelope className="text-primary text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <a
-                      href="mailto:NicholasEllis4@gmail.com"
-                      className="text-primary hover:text-primary-600 transition-colors duration-300"
-                    >
-                      NicholasEllis4@gmail.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-            </AnimatedSection>
-
-            {/* Contact Form */}
-            <AnimatedSection direction="right">
-              <div className="bg-gray-50 rounded-2xl p-8 shadow-lg">
+      <section className="py-8 md:py-12 lg:py-16" style={{ backgroundColor: '#3D4A3D' }}>
+        <div className="container-custom max-w-2xl">
+          <AnimatedSection>
+            <div className="bg-gray-50 rounded-2xl p-8 shadow-lg">
                 {isSubmitted ? (
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -225,9 +196,8 @@ export default function Contact() {
                     </p>
                   </form>
                 )}
-              </div>
-            </AnimatedSection>
-          </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 

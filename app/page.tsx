@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-900 via-primary-700 to-primary-500">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ backgroundColor: '#3D4A3D' }}>
         {/* Animated Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -28,7 +28,17 @@ export default function Home() {
               transition={{ duration: 0.8, ease: 'easeOut' }}
             >
               <motion.h1
-                className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-6 leading-tight"
+                className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 leading-tight tracking-wider uppercase"
+                style={{
+                  fontFamily: 'var(--font-bebas)',
+                  color: '#3D4A3D',
+                  textShadow: `
+                    -1px -1px 0 white,
+                    1px -1px 0 white,
+                    -1px 1px 0 white,
+                    1px 1px 0 white
+                  `
+                }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
@@ -57,32 +67,16 @@ export default function Home() {
               >
                 <Link
                   href="/contact"
-                  className="btn-primary bg-white text-primary hover:bg-gray-100 shadow-2xl px-10 py-4 text-lg"
+                  className="bg-white text-gray-900 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl px-10 py-4 text-lg"
                 >
                   Get In Touch
                 </Link>
                 <Link
                   href="/about"
-                  className="btn-secondary border-white text-white hover:bg-white hover:text-primary px-10 py-4 text-lg"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 px-10 py-4 text-lg"
                 >
                   Learn More
                 </Link>
-              </motion.div>
-
-              {/* Social Icons */}
-              <motion.div
-                className="flex items-center justify-center space-x-6 mt-16"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8 }}
-              >
-                <a
-                  href="/contact"
-                  className="text-white/70 hover:text-white transition-all duration-300 transform hover:scale-110"
-                  aria-label="Email"
-                >
-                  <FaEnvelope size={32} />
-                </a>
               </motion.div>
             </motion.div>
           </div>
